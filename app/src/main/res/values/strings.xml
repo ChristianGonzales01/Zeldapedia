@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">RecyclerViewExamplo</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_historia">HistoriaActivity</string>
+    <string name="title_activity_song">Song</string>
+</resources>
+

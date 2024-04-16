@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+
+  >
+
+
+
+
+
+        <FrameLayout
+
+
+
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:background="#000000"
+            tools:ignore="ExtraText">
+            android:id="@+id/container"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:layout_behavior="@string/appbar_scrolling_view_behavior" >
+
+            <View
+                android:layout_width="375dp"
+                android:layout_height="637dp"
+                android:layout_marginStart="18dp"
+                android:layout_marginTop="10dp"
+
+                android:background="@drawable/rectangulo"
+
+
+                />
+
+            <Button
+                android:id="@+id/infoButton"
+                android:layout_width="139dp"
+                android:layout_height="70dp"
+                android:layout_marginStart="200dp"
+                android:layout_marginTop="20dp"
+                android:layout_toEndOf="@id/Majoras"
+                android:backgroundTint="@color/white"
+                android:text="Historia"
+                android:textColor="@color/black" />
+
+            <Button
+                android:id="@+id/SkyWardButton"
+                android:layout_width="139dp"
+                android:layout_height="70dp"
+                android:layout_marginStart="200dp"
+                android:layout_marginTop="157dp"
+                android:backgroundTint="@color/white"
+                android:text="Historia"
+
+                android:textColor="@color/black" />
+
+
+        </FrameLayout>
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:layout_marginStart="8dp"/>
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/navMenu"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:menu="@menu/navegation_menu"
+        android:layout_gravity="bottom"
+        android:background="@color/mostaza"
+        app:itemIconTint="@color/white"
+        app:itemTextColor="@color/white" />
+
+
+
+
+        <TextView
+            android:id="@+id/nameTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="50dp"
+            android:textSize="20sp"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:id="@+id/artistTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/nameTextView"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:textSize="16sp"/>
+
+        <TextView
+            android:id="@+id/labelTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/artistTextView"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:textSize="16sp"/>
+
+        <TextView
+            android:id="@+id/yearTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/labelTextView"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:textSize="16sp"/>
+
+
+
+
+
+
+        <ImageView
+            android:id="@+id/Majoras"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:src="@drawable/majoras"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="20dp"/>
+
+    <ImageView
+            android:id="@+id/SkyWard"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="160dp"
+            android:src="@drawable/skyward" />
+
+    <ImageView
+            android:id="@+id/Twilight"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:src="@drawable/twilight"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="300dp"/>
+
+    <Button
+        android:id="@+id/song3Buttonmus"
+        android:layout_width="139dp"
+        android:layout_height="70dp"
+        android:layout_marginStart="200dp"
+        android:layout_marginTop="295dp"
+        android:layout_toEndOf="@id/Twilight"
+        android:backgroundTint="@color/white"
+        android:text="Historia"
+        android:textColor="@color/black" />
+
+        <ImageView
+            android:id="@+id/Wind"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:src="@drawable/wind"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="440dp"/>
+
+    <Button
+        android:id="@+id/song4Button"
+        android:layout_width="139dp"
+        android:layout_height="70dp"
+        android:layout_marginStart="200dp"
+        android:layout_marginTop="430dp"
+        android:layout_toEndOf="@id/Wind"
+        android:backgroundTint="@color/white"
+        android:text="Historia"
+
+        android:textColor="@color/black" />
+
+    <Button
+        android:id="@+id/song5Button"
+        android:layout_width="139dp"
+        android:layout_height="70dp"
+        android:layout_marginStart="200dp"
+        android:layout_marginTop="570dp"
+        android:layout_toEndOf="@id/ocarina"
+        android:backgroundTint="@color/white"
+        android:text="Historia"
+
+        android:textColor="@color/black" />
+
+    <FrameLayout
+        android:id="@+id/frameContainer"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_anchor="@+id/song3Buttonmus"
+        app:layout_anchorGravity="center"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+        <ImageView
+            android:id="@+id/ocarina"
+            android:layout_width="120dp"
+            android:layout_height="66dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="580dp"
+            android:src="@drawable/ocarina" />
+    </FrameLayout>
+
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>
+
+
+
+
+

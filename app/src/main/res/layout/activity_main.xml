@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="#000000"
+        tools:ignore="ExtraText">
+
+        <!-- Título grande "The Legend of Zelda" -->
+        <TextView
+            android:id="@+id/textViewTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:text="The Legend of Zelda"
+            android:textSize="30sp"
+            android:textStyle="normal"
+            android:layout_marginTop="16dp"
+            android:textColor="#FFFF00" /> <!-- Amarillo -->
+
+        <!-- Subtítulo "Página 1: Personajes" -->
+        <TextView
+            android:id="@+id/textViewSubtitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:text="Página 1: Personajes"
+            android:textColor="@color/white"
+            android:textSize="22sp"
+            android:layout_marginTop="8dp" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerZelda"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:background="@color/black"/>
+
+        <Button
+            android:id="@+id/btnaddZelda"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Nuevo Personaje Zelda"
+            android:layout_margin="16dp"
+            android:textColor="@color/white"
+            android:backgroundTint="@color/mostaza"/>
+
+    </LinearLayout>
+
+    <FrameLayout
+        android:id="@+id/frameContainer"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"/>
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/navMenu"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:menu="@menu/navegation_menu"
+        android:layout_gravity="bottom"
+        android:background="@color/mostaza"
+        app:itemIconTint="@color/white"
+        app:itemTextColor="@color/white" />
+
+
+
+
+
+
+
+
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".MainActivity">
+
+        <Button
+            android:id="@+id/button"
+            android:layout_width="200dp"
+            android:layout_height="50dp"
+            android:text="Agregar personajes"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="650dp"
+            android:backgroundTint="@color/mostaza"/>
+
+        <EditText
+            android:id="@+id/editText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="50dp"
+            android:hint="Ingrese texto aquí"
+            android:inputType="text" />
+
+    </RelativeLayout>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>
+
